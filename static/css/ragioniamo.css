@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 400px;
+}
+
+span {
+    margin-left: 30px;
+    font-size: 1.1rem;
+}
+
+#help {
+    color: #0004;
+    padding: 50px;
+    font-size: 1.2rem;
+}
+
+#card {
+    padding: 50px;
+
+}
+
