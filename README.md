@@ -33,3 +33,8 @@ const data = [
 esempio di visualizzazione
 
 ![img database](static/img/tabella.jpg)
+
+
+esempio di calcolo
+
+![img calcolo](static/img/cedola.jpg)
