@@ -1,6 +1,7 @@
 .row {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 input {
@@ -13,13 +14,13 @@ span {
 }
 
 #help {
-    color: #0004;
-    padding: 50px;
-    font-size: 1.2rem;
+    color: #0007;
+    padding: 50px 50px 20px 50px;
+    font-size: 1.1rem;
 }
 
 #card {
-    padding: 50px;
+    padding: 30px;
 
 }
 

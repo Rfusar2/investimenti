@@ -12,8 +12,6 @@ class Page {
     constructor(){
         this.page = select("one", "page")
         this.page.innerHTML = ""
-        this.css = select("all", "link")[1]
-        this.css.remove()
     }
 
     insertLink(name, url){
@@ -23,11 +21,31 @@ class Page {
         link.target = "_blank"
         this.page.append(link)
     }
-    addCss(src){
-        const head = select("one","head")
-        const css = create("link")
-        css.rel = "stylesheet"
-        css.href = src
-        head.append(css)
+}
+
+class Idea extends Page {
+    constructor(description){
+        super()
+        this.page.id = "idea"
+        this.description = create("div")
+        this.description.id = "description"
+        
+        this.insertLink_descritpion("BTP 02/03/2026", "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/btp-valore-nuova-emissione-dal-2-al-6-marzo-con-meccanismo-stepup-di-222-anni-149_2026-02-05_TLB.html")
+
+
+        this.description.innerHTML += description
+        this.product = create("div")
+        this.product.id = "product"
+
+        this.page.append(this.description, this.product)
+    }
+
+    insertLink_descritpion(name, url){
+        const link = create("a")
+        link.textContent = name
+        link.href = url
+        link.target = "_blank"
+        this.description.append(link)
+
     }
 }
