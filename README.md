@@ -1,4 +1,4 @@
-* Helper per calcoli su titoli di stato
+# Helper per calcoli su titoli di stato
 
 ![version](https://img.shields.io/badge/version-0.0.001-green)
 
