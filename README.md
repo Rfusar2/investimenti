@@ -11,13 +11,13 @@ non ho utilizzato linguaggi di programmazione, perchè questi file sono utilizza
 
 cliccando su Home, 
 
-![img home](static\img\home.jpg)
+![img home](static/img/home.jpg)
 
 si puo cliccare su uno dei link che rimando sul sito del relativo stato per visualizzare 
 i titoli di stato (per alcuni fanno scaricare un pdf)
 
 
-per modificare il database devi andare sul file [database](static\js\database.js)
+per modificare il database devi andare sul file [database](static/js/database.js)
 
 ```javascript
 const data = [
@@ -32,4 +32,4 @@ const data = [
 
 esempio di visualizzazione
 
-![img database](static\img\tabella.jpg)
+![img database](static/img/tabella.jpg)
