@@ -14,12 +14,12 @@ span {
 
 #help {
     color: #0004;
-    padding: 50px;
-    font-size: 1.2rem;
+    padding: 50px 50px 20px 50px;
+    font-size: 1.1rem;
 }
 
 #card {
-    padding: 50px;
+    padding: 30px;
 
 }
 

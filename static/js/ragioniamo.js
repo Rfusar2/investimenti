@@ -1,12 +1,15 @@
+//TODO sistemare il concetto di riga cioe
+// una riga deve avere il msg di help, calcolo e spiegazione di calcolo
+
 class Ragioniamo extends Page {
     constructor(){
         super()
         this.addCss("static/css/ragioniamo.css")
         this.page.innerHTML = `
             <div id="help">
-                per eseguire il calcolo scrivere nel input</br>
+                per eseguire il calcolo scrivere nel input, 
                 (investimento)'spazio'(tasso lordo)'spazio'(cedole)</br>
-                *(cedole) on è obbligatorio cioè </br>
+                *(cedole) on è obbligatorio cioè, 
                 (investimento)'spazio'(tasso lordo)</br>
             </div>
             <div id="card"></div>
@@ -20,7 +23,7 @@ class Ragioniamo extends Page {
         row.classList.add("row")
 
         const input = create("input")
-        input.placeholder = "questo è l'input :)"
+        input.placeholder = "(investimento)'spazio'(tasso lordo)'spazio'(cedole)"
         const span = create("span")
 
         input.addEventListener("blur", (e)=>{
