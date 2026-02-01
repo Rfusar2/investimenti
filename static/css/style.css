@@ -52,3 +52,13 @@ svg {
     margin-right: 10px;
 
 }
+
+#start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start > h1 {
+    font-size: 50px;
+}

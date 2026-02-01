@@ -7,10 +7,8 @@ class Ragioniamo extends Page {
         this.page.id = ""
         this.page.innerHTML = `
             <div id="help">
-                per eseguire il calcolo scrivere nel input, 
-                (investimento)'spazio'(tasso lordo)'spazio'(cedole)</br>
-                *(cedole) on è obbligatorio cioè, 
-                (investimento)'spazio'(tasso lordo)</br>
+                tasso_fisso = tasso_lordo * 0.875 (12,5) </br>
+                tasso_fisso = tasso_lordo * 0.740 (26)
             </div>
             <div id="card"></div>
         `
@@ -30,7 +28,9 @@ class Ragioniamo extends Page {
             const v = e.target.value
             const [investimento, tasso, n_cedola] = v.split(" ").map(e => parseFloat(e))
             const tasso_fisso = (tasso/100) * 0.875
-            console.log(n_cedola)
+            //* Log
+            console.log({ investimento, tasso_fisso, n_cedola })
+
             if(n_cedola != undefined){
                 const tot = ((investimento*tasso_fisso)/n_cedola).toFixed(3)
                 span.textContent = `[${investimento} * (tasso fisso) ${(tasso_fisso).toFixed(3)}] / (n° cedole) ${n_cedola} = (cedola) ${tot}`
