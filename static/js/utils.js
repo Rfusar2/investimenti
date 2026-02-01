@@ -12,8 +12,6 @@ class Page {
     constructor(){
         this.page = select("one", "page")
         this.page.innerHTML = ""
-        this.css = select("all", "link")[1]
-        this.css.remove()
     }
 
     insertLink(name, url){
@@ -22,12 +20,5 @@ class Page {
         link.href = url
         link.target = "_blank"
         this.page.append(link)
-    }
-    addCss(src){
-        const head = select("one","head")
-        const css = create("link")
-        css.rel = "stylesheet"
-        css.href = src
-        head.append(css)
     }
 }

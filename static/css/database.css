@@ -2,7 +2,7 @@ table {
     border-collapse: collapse;   
 }
 
-page {
+#database {
     display: flex;
     justify-content: center;
     align-items: center;

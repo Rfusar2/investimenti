@@ -4,7 +4,7 @@
 class Ragioniamo extends Page {
     constructor(){
         super()
-        this.addCss("static/css/ragioniamo.css")
+        this.page.id = ""
         this.page.innerHTML = `
             <div id="help">
                 per eseguire il calcolo scrivere nel input, 

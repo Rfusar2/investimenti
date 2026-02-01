@@ -14,8 +14,7 @@ const data = [
 class Database extends Page {
     constructor(){
         super()
-        this.addCss("static/css/database.css")
-
+        this.page.id = "database"
         this.table = create("table")
         this.initTable()
 

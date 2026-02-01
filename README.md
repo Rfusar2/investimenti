@@ -2,12 +2,13 @@
 
 ![version](https://img.shields.io/badge/version-0.0.001-green)
 
-è ancora in fase di sviluppo... 
+la grafica fa schifo però per i calcoli è funzionale
 
-cioè la grafica fa schifo però per i calcoli è funzionale
+non ho utilizzato linguaggi di programmazione per portabilità 
 
-non ho utilizzato linguaggi di programmazione, perchè questi file sono utilizzabili da tutti senza installare niente sul prorpio pc.
+non devi installare niente sul tuo pc.
 
+---
 
 cliccando su Home, 
 
@@ -16,6 +17,7 @@ cliccando su Home,
 si puo cliccare su uno dei link che rimando sul sito del relativo stato per visualizzare 
 i titoli di stato (per alcuni fanno scaricare un pdf)
 
+---
 
 per modificare il database devi andare sul file [database](static/js/database.js)
 
@@ -30,11 +32,19 @@ const data = [
 ]
 ```
 
+---
+
 esempio di visualizzazione
 
 ![img database](static/img/tabella.jpg)
 
+---
 
 esempio di calcolo
 
 ![img calcolo](static/img/cedola.jpg)
+
+---
+## Issues
+
+icone non funzionanti

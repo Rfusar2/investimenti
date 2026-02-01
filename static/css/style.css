@@ -17,22 +17,26 @@ body {
 component {
     width: 100%;
     height: 100%;
-
     display: grid;
     grid-template-columns: 15% 85%;
+    transition: 300ms;
 }
 
 aside {
     border-right: var(--border);
     padding-top: 40%;
     padding-left: 20%;
-
 }
+
 li {
     font-size: 1.1rem;
     margin-bottom: 20px;
     list-style: none;
     cursor: pointer;
+    overflow: hidden;
+    transition: 300ms;
+    display: flex;
+    align-items: center;
 }
 
 panel{
@@ -44,3 +48,7 @@ nav {
     border-bottom: var(--border);
 }
 
+svg {
+    margin-right: 10px;
+
+}
