@@ -7,5 +7,6 @@ class Home extends Page {
         this.insertLink("Francia", "https://www.aft.gouv.fr/en/encours-detaille-oat")
         this.insertLink("Bretagna", "https://www.dmo.gov.uk/data/pdfdatareport?reportCode=D1A")
         this.insertLink("America", "https://www.treasurydirect.gov/auctions/announcements-data-results/")
+        this.insertLink("Cambio Valuta", "https://it.investing.com/currencies/")
     }
 }
