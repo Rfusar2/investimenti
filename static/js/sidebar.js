@@ -1,10 +1,8 @@
 const pages = [
-    {page:{ long: "Titoli Di Stato", short: "T"}, _class: Home},
-    {page:{ long: "Database", short: "D"}, _class: Database},
-    {page:{ long: "Ragioniamo", short:"R"}, _class: Ragioniamo},
-    {page:{ long: "Idea 1", short: "1"}, _class: Idea1},
-    {page:{ long: "Idea 2", short: "2"}, _class: Idea2},
-    {page:{ long: "Idea 3", short: "3"}, _class: Idea3},
+    {page:{ long: "Home", short: "H"}, _class: Home},
+    //{page:{ long: "Pensiamo", short: "P"}, _class: Database},
+    {page:{ long: "Laboratorio", short: "L"}, _class: Formazione},
+    //{page:{ long: "Charts", short: "c"}, _class: Idea3},
 ]
 
 function myAnimation(e, mouseover_func, mouseout_func){

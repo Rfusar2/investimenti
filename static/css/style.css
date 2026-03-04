@@ -26,6 +26,7 @@ aside {
     border-right: var(--border);
     padding-top: 40%;
     padding-left: 20%;
+    box-shadow: .5px .5px 5px #0002;
 }
 
 li {
@@ -46,6 +47,7 @@ panel{
 
 nav {
     border-bottom: var(--border);
+    box-shadow: .5px .5px 5px #0002;
 }
 
 svg {

@@ -1,6 +1,6 @@
-# Helper per calcoli su titoli di stato
+# Helper Non so
 
-![version](https://img.shields.io/badge/version-0.0.001-green)
+![version](https://img.shields.io/badge/version-0.0.3-green)
 
 la grafica fa schifo però per i calcoli è funzionale
 
@@ -19,32 +19,16 @@ i titoli di stato (per alcuni fanno scaricare un pdf)
 
 ---
 
-per modificare il database devi andare sul file [database](static/js/database.js)
+Per modificare il database devi creare una cartella allo stesso livello di *index.html*.
 
-```javascript
-const data = [
-    ["GB00BT7J0027", "4.5%", "07-03-2035", "99.84", "Gran Bretagna", "Cedola"],
-    ["GB00BTXS1K06", "4.75%", "22-10-2035", "101.24", "Gran Bretagna", "Cedola" ],
-    ["FR001400X8V5", "3.2%", "25-05-2035", "98.75", "Francia", "Cedola"],
-    ["91282CPJ4", "4.0%", "15-11-2035", "98.10", "America", "Cedola"],
-    ["IT0005437147", "0%", "01-04-2026", "99.699", "Italia", "Scadenza" ],
-    ["IT0005454241", "0%", "01-08-2026", "99.047", "Italia", "Scadenza"],
-]
+```text
+  data
+    ◌ prod
+       ◌ data.js
+       ◌ txt.js
+ ✗ index.html
 ```
 
----
-
-esempio di visualizzazione
-
-![img database](static/img/tabella.jpg)
-
----
-
-esempio di calcolo
-
-![img calcolo](static/img/cedola.jpg)
-
----
 ## Issues
 
 icone non funzionanti

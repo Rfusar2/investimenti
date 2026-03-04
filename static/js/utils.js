@@ -32,8 +32,6 @@ class Idea extends Page {
         
         this.insertLink_descritpion("BTP 02/03/2026", "https://www.borsaitaliana.it/borsa/notizie/teleborsa/finanza/btp-valore-nuova-emissione-dal-2-al-6-marzo-con-meccanismo-stepup-di-222-anni-149_2026-02-05_TLB.html")
 
-
-        this.description.innerHTML += description
         this.product = create("div")
         this.product.id = "product"
 
