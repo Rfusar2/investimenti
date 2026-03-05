@@ -1,7 +1,7 @@
 const pages = [
     {page:{ long: "Home", short: "H"}, _class: Home},
-    //{page:{ long: "Pensiamo", short: "P"}, _class: Database},
-    {page:{ long: "Laboratorio", short: "L"}, _class: Formazione},
+    {page:{ long: "Pensiamo", short: "P"}, _class: Ragioniamo},
+    {page:{ long: "Appunti", short: "L"}, _class: Formazione},
     //{page:{ long: "Charts", short: "c"}, _class: Idea3},
 ]
 

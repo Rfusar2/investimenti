@@ -2,9 +2,7 @@
 
 ![version](https://img.shields.io/badge/version-0.0.3-green)
 
-la grafica fa schifo però per i calcoli è funzionale
-
-non ho utilizzato linguaggi di programmazione per portabilità 
+la grafica fa schifo però...
 
 non devi installare niente sul tuo pc.
 
@@ -12,10 +10,10 @@ non devi installare niente sul tuo pc.
 
 cliccando su Home, 
 
-![img home](static/img/home.jpg)
+![img home](static/img/home1.jpg)
 
 si puo cliccare su uno dei link che rimando sul sito del relativo stato per visualizzare 
-i titoli di stato (per alcuni fanno scaricare un pdf)
+i titoli di stato. (per alcuni fanno scaricare un pdf)
 
 ---
 
@@ -27,6 +25,19 @@ Per modificare il database devi creare una cartella allo stesso livello di *inde
        ◌ data.js
        ◌ txt.js
  ✗ index.html
+```
+
+in **data/prod/data.js** potresti scriverci tipo
+
+```text
+const IDEA_A = `
+blabla
+`
+const IDEA_B = `
+blabla
+`
+
+... etc
 ```
 
 ## Issues

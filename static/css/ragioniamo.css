@@ -6,6 +6,12 @@
 
 input {
     width: 400px;
+    padding: 5px 3px;
+    color: var(--color);
+    background: var(--bg-card);
+    outline: none;
+    border:none;
+    border-bottom: 1px solid #0007;
 }
 
 span {
@@ -14,7 +20,7 @@ span {
 }
 
 #help {
-    color: #0007;
+    color: var(--color);
     padding: 50px 50px 20px 50px;
     font-size: 1.1rem;
 }

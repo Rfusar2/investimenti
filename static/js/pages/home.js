@@ -19,6 +19,8 @@ const altro = [
     ["BorsaItaliana", "https://www.borsaitaliana.it/homepage/homepage.htm"],
     ["MorningStar", "https://www.morningstar.com/"],
 ]
+const TV = '<iframe src="https://www.ilsole24ore.com/"></iframe>'
+const tv_accesa = false
 
 class Home extends Page {
     constructor(){
@@ -29,6 +31,7 @@ class Home extends Page {
         this.titoliEuropei = initLinks(titoliEuropei)
         this.notizie =       initLinks(notizie)
         this.altro =         initLinks(altro)
+        this.daVedere =      initLinks(DATA_A)
 
         const Titoli = create("div")
         Titoli.innerHTML = this.setContentTDS()
@@ -42,7 +45,7 @@ class Home extends Page {
 
     setContentTDS(){
         return `
-            <div class="box">
+            <div class="box box-1">
                 <div>
                     <h2 class="titoli">Dettagli ITALIA</h2>
                     <div class="flex"> ${this.titoliItalia} </div>
@@ -50,6 +53,9 @@ class Home extends Page {
                 <div>
                     <h2 class="titoli">Titoli EUROPEI</h2>
                     <div class="flex"> ${this.titoliEuropei} </div>
+                </div>
+                <div style="background:transparent">
+                    ${tv_accesa ? TV : ""}
                 </div>
             </div>
         `
@@ -64,6 +70,10 @@ class Home extends Page {
                 <div>
                     <h2 class="titoli">Altro</h2>
                     <div class="flex"> ${this.altro} </div>
+                </div>
+                <div>
+                    <h2 class="titoli">Da Vedere</h2>
+                    <div class="flex"> ${this.daVedere} </div>
                 </div>
             </div>
         `

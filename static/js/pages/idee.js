@@ -31,9 +31,9 @@ class Formazione extends Page {
         return `
             <div>
                 <div id="pagesBTN">
-                    <button data-prev>Prev</button>
+                    <button data-prev class="btn btn-primary">Prev</button>
                     <span id="nPag"></span>
-                    <button data-next>Next</button>
+                    <button data-next class="btn btn-primary">Next</button>
                 </div>
                 <pre id="preview">
                     Preview...
@@ -45,8 +45,8 @@ class Formazione extends Page {
     initMenu(){
         return `
             <div id="formazione-menu">
-                <button class="btn-idea" data-btn="0">Prodotti</button>
-                <button class="btn-idea" data-btn="1">Tipi Società</button>
+                <button class="btn btn-primary btn-idea" data-btn="0" class="btn-primary">Prodotti</button>
+                <button class="btn btn-primary btn-idea" data-btn="1" class="btn-primary">Tipi Società</button>
             </div>
         `
     }
@@ -76,6 +76,7 @@ class Formazione extends Page {
 
     btnsEvent(){
         this.previewer = select("one", "#preview")
+        const btnsPages = select("one", "#pagesBTN")
         select("all", ".btn-idea").forEach(btn =>{
             btn.addEventListener("click", (e)=> {
                 this.currentPageIndex = 0
@@ -93,6 +94,8 @@ class Formazione extends Page {
                         break 
                     }
                 }
+                this.previewer.style.opacity = 1
+                btnsPages.style.opacity = 1
                 this.nPagText.textContent = `Pagina ${this.currentPageIndex+1} - ${this.pages.length}`
                 this.previewer.textContent = this.pages[this.currentPageIndex]
             })

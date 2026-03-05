@@ -7,15 +7,15 @@ class Ragioniamo extends Page {
         this.page.id = ""
         this.page.innerHTML = `
             <div id="help">
-                tasso_fisso = tasso_lordo * 0.875 (12,5) </br>
-                tasso_fisso = tasso_lordo * 0.740 (26)
+                tasso_fisso = tasso_lordo * 0.875 (12,5%) </br>
+                tasso_fisso = tasso_lordo * 0.740 (26% )
             </div>
             <div id="card"></div>
         `
         this.card = select("one", "#card")
         this.Row("(capitale)'spazio'(tasso lordo)'spazio'(cedole)", this.initCedola)
-        this.Row("(valuta)'spazio'(capitale)", this.initValuta)
     }
+
 
     Row(placeholder, func){
         const row = create("div")
@@ -27,7 +27,7 @@ class Ragioniamo extends Page {
 
         input.addEventListener("blur", (e)=>func(e, span, row))
         row.append(input, span)
-       this.card.append(row)
+        this.card.append(row)
     }
 
     initCedola(e, span, row){
@@ -48,10 +48,4 @@ class Ragioniamo extends Page {
         row.append(span)
     }
     
-    initValuta(e, span, row){
-        const euro = 1
-        const [valuta, capitale] = e.target.value.split(" ")
-
-        console.log((valuta/euro)*capitale)
-    }
 }
